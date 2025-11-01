@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <title>Web shopping</title>
+</head>
+
+<body>
+
+    <div class="body">
+
+        <div class="wrap">
+            <button id="btn1" onclick="openBasket()"><span
+                    class="material-symbols-outlined">shopping_cart</span></button>
+            <button id="btn2" onclick="closeBasket()"><span
+                    class="material-symbols-outlined">shopping_cart</span></button>
+            <div class="product">
+                <div class="item">
+                    <img src="images.jpg" alt="">
+                    <div class="btn">
+                        <p id="price">10000</p>
+
+                        <button onclick="minus()">-</button>
+                        <p id="amount">0</p>
+                        <button onclick="plus()">+</button>
+
+                        <button id="btn" onclick="addCart()">Savatga <span
+                                class="material-symbols-outlined">shopping_cart</span></button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="basket">
+            <div class="item">
+                <p id="cart">Savat Bo'sh</p>
+                <img class="img" src="" alt="">
+                <button id="buy" onclick="thanks()">Sotib olish <span
+                        class="material-symbols-outlined">shopping_cart</span></button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
